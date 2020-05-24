@@ -1,0 +1,34 @@
+1.GETメソッドとPOSTメソッドについて調べ、どのような違いがあるか
+   説明してください。
+   ⇨GETメソッドはサーバーに渡すパラメータをURLに組み込む
+　　POSTメソッドはサーバーに渡すパラメータをリクエストボディに組み込む
+　　例えば検索サイトで検索結果がURLに含まれているのがGETメソッド
+　　また、どのような条件を入力しても検索結果が変わらないのがPOSTメソッド
+
+2.【応用】 GET/POSTメソッド以外にどのようなメソッドがあるか、
+   またどのように使われるかを説明してください。
+   ⇨PUTメソッド：サーバにデータを渡すときに使われるが、主に新規作成より、
+　　既存データの「更新」で使われるのが一般的
+　　DELETEメソッド：既存データを削除したいときに使う
+
+3.【応用】 routes/web.php を編集して、 admin/profile/create に postメソッドで
+   アクセスしたら ProfileController の create Action に割り当てるように
+   設定してください。
+   ⇨route/web.phpに記載
+  
+4.【応用】 resources/views/admin/profile/create.blade.php を編集して、
+   氏名(name)、性別(gender)、趣味(hobby)、自己紹介欄(introduction)を
+   入力するフォームを作成してください。
+   また、formの送信先(<form action=”この部分”>)を、 Admin\ProfileController の 
+   create Action に指定してください。(ヒント: resources/views/admin/news/
+   create.blade.php)
+   ⇨resources/views/admin/profile/create.blade.phpを編集
+
+5.【応用】 4. ができたら、 /admin/profile/create にアクセスしてみましょう。
+   ⇨アクセス結果は下記
+    https://gyazo.com/e9c69ae3a3ee38f1b75f6588d1164422
+
+6.【応用】 routes/web.php を編集して、 admin/profile/edit に postメソッドで
+   アクセスしたら ProfileController の update Action に割り当てるように
+   設定してください。
+   ⇨routes/web.phpを編集
